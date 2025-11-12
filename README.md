@@ -89,12 +89,6 @@ The data spans years from 1995 to 2005 and includes financial metrics in USD (e.
 - **Portfolio Concentration**: 16% of clients hold loans from $78K (low-risk) to $310K (high-risk), with a Risk LDR of 1.98.
 - **Recommendations**: Focus on diversifying high-risk segments, enhancing monitoring for outliers, and tailoring products by occupation/nationality.
 
-For detailed visuals, refer to the notebook or screenshots below:
-
-Summary Dashboard : Banking_Risk_Analysis/Images/Dashboard Screenshots/Summary Page.png
-Deposit Analysis : Banking_Risk_Analysis/Images/Dashboard Screenshots/Deposite Anlysis Page.png
-Loan Deposit Analysis : Banking_Risk_Analysis/Images/Dashboard Screenshots/Loan Deposit Page.png
-
 ## How to Run the Project
 
 1. **Clone the Repository**:
