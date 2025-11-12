@@ -1,94 +1,70 @@
-# Banking Risk Analysis
+# 📊 Banking Risk Analysis Dashboard (Python / Jupyter Notebook)
 
--Banking Dashboard Screenshot : path - Banking_Risk_Analysis/Images/Dashboard Screenshots/
+## 🧠 Overview
 
-## Project Overview
+The Banking Risk Analysis Dashboard is a Python-based project designed to analyze a bank's client portfolio and identify key risk and exposure drivers across financial products, client demographics, and banking relationships.
 
-This project analyzes a dataset of 3,000 banking customers to identify key risk and exposure drivers across financial products, client demographics, and banking relationships. It explores trends in credit behavior, loan deposits, risk weightings, and more to provide actionable insights for optimizing lending strategies, credit risk mitigation, and client segmentation.
+It provides actionable insights on credit behavior, loan exposures, risk weightings, and client segmentation, helping banks optimize lending strategies, mitigate credit risks, and manage portfolio concentration effectively.
 
-The analysis is conducted using Python in a Jupyter Notebook, with data cleaning, exploratory data analysis (EDA), risk segmentation, outlier detection, and visualizations.
+## 🚀 Key Features
+- 📈 **Risk Distribution Analysis** – Visualizes customer distribution across risk levels (low, medium, high) and highlights exposure concentration.
+- 📊 **Demographic Insights** – Examines trends based on nationality, age, occupation, and gender to uncover high-risk segments.
+- 💳 **Financial Product Exposure** – Analyzes Credit Card Balances, Bank Loans, Deposits, and Business Lending patterns.
+- 🔍 **Outlier Detection – Identifies** extreme values in loans, deposits, and credit balances using IQR for anomaly or fraud detection.
+- 🧭 **Correlation & Trend Analysis** – Explores relationships between income, savings, deposits, loans, and risk weightings.
+- 🖼️ **Interactive Visualizations** – Includes scatter plots, bar charts, pie charts, and key metrics for intuitive insights.
 
-## Problem Statement
+## 🧩 Dataset Information
+The dataset Banking_data.xlsx contains three sheets:
+1. Banking :
+Main client data (3,000 rows) including:
+- **Client ID**
+- **Name**
+- **Age**
+- **Location**
+- **Joined Bank**
+- **Banking Contact**
+- **Nationality**
+- **Occupation**
+- **Fee Structure**
+- **Loyalty Classification**
+Financial metrics:
+- **Estimated Income**
+- **Superannuation Savings**
+- **Credit Card Balance**
+- **Bank Loans**
+- **Deposits**
+- **Accounts**
+- **Business Lending**
+- **Properties Owned**
+- **Risk Weighting
+- **BRId (Banking Relationship ID)**
+- **GenderId**
+- **IAId (Investment Advisor ID)**
 
-Analyze the bank's client portfolio data to identify key risk and exposure drivers across financial products, client demographics, and banking relationships. Uncover age-related trends, nationality-based patterns, and high-risk outliers in risk weightings. Align client profiles against loyalty classifications and fee structures to optimize lending strategies, credit risk mitigation, and client segmentation for enhanced financial stability and reduced portfolio concentration risk.
+2. Gender – Mapping of GenderId to Gender (e.g., 1: Male, 2: Female)
+3. Banking Relationship – Mapping of BRId to Banking Relationship (Retail, Institutional, Private Bank, Commercial)
+4. Investment Advisor – Mapping of IAId to advisor names
 
-## Objectives
+The dataset spans 1995–2005 and financial metrics are in USD (loans in billions, savings in millions).
 
-- Perform data profiling and cleaning to ensure accuracy.
-- Explore key indicators like Credit Card Balance, Bank Loans, and Risk Weighting across demographics.
-- Segment customers into risk tiers (low, medium, high) based on Risk Weighting.
-- Detect outliers in credit and loan values to identify potential anomalies or fraud.
-- Analyze correlations between exposures, risks, and client profiles.
-- Deliver insights to improve banking strategies and reduce risks.
+## ⚙️ Tools & Technologies
+- **Power BI Desktop**
+- **Power Query (Data Transformation)**
+- **DAX (Data Analysis Expressions)**
+- **Data Visualization and Modelling**
+- **Python 3**
+- **Google Colab**
+- **Libraries: Pandas, NumPy, Matplotlib, Seaborn, SciPy/Statsmodels**
 
-## Dataset Description
 
-The dataset is stored in `Banking_data.xlsx` and includes the following sheets:
+## 📊 Insights Highlighted
+- Risk Concentration: 40.73% of clients are low-risk, but high-risk clients (16.39%) account for 68% of total loan exposure.
+- Demographic Patterns: African nationalities show the highest average risk (2.29). High-income clients are 4x more likely to be high-risk.
+- Exposure Correlations: Strong positive correlation between Bank Loans and Business Lending; outliers may indicate fraud risk.
+- Portfolio Concentration: Certain clients hold loans ranging from $78K (low-risk) to $310K (high-risk), with a Risk LDR of 1.98.
+- Recommendations: Diversify high-risk segments, monitor outliers, and tailor banking products by occupation and nationality.
 
-- **Banking**: Main client data with 3,000 rows and columns such as:
-  - Client ID, Name, Age, Location ID, Joined Bank, Banking Contact, Nationality, Occupation, Fee Structure, Loyalty Classification, Estimated Income, Superannuation Savings, Amount of Credit Cards, Credit Card Balance, Bank Loans, Bank Deposits, Checking Accounts, Saving Accounts, Foreign Currency Account, Business Lending, Properties Owned, Risk Weighting, BRId (Banking Relationship ID), GenderId, IAId (Investment Advisor ID).
-  
-- **Gender**: Mapping of GenderID to Gender (e.g., 1: Male, 2: Female).
 
-- **Banking Relationship**: Mapping of BRId to Banking Relationship (e.g., 1: Retail, 2: Institutional, 3: Private Bank, 4: Commercial).
-
-- **Investment Advisor**: Mapping of IAId to Investment Advisor names.
-
-The data spans years from 1995 to 2005 and includes financial metrics in USD (e.g., loans in billions, savings in millions).
-
-**Note**: The dataset is truncated in some views, but the full Excel file is used for analysis.
-
-## Tools and Technologies
-
-- **Programming Language**: Python 3
-- **Libraries**: 
-  - Pandas (for data manipulation)
-  - NumPy (for numerical computations)
-  - Matplotlib and Seaborn (for visualizations)
-  - SciPy/Statsmodels (for statistical analysis, if needed)
-- **Environment**: Jupyter Notebook (`Banking_Risk_Analysis.ipynb`)
-- **Data Source**: Excel file (`Banking_data.xlsx`)
-
-## Analysis Steps
-
-1. **Data Loading and Profiling**:
-   - Loaded data from Excel using Pandas.
-   - Checked for data types, missing values, duplicates, and basic statistics.
-   - Handled cleaning: Standardized formats, filled missing values, removed duplicates.
-
-2. **Exploratory Data Analysis (EDA)**:
-   - Analyzed distributions of key variables (e.g., Age, Estimated Income, Risk Weighting).
-   - Grouped data by demographics (e.g., Nationality, Gender, Occupation) and banking relationships.
-
-3. **Risk Segmentation**:
-   - Categorized customers into risk levels based on Risk Weighting (e.g., 1-5 scale).
-   - Calculated exposure concentrations in each tier.
-
-4. **Outlier Detection**:
-   - Used Interquartile Range (IQR) to identify extreme values in loans, deposits, and credit balances.
-
-5. **Correlation and Visualizations**:
-   - Computed correlations between variables (e.g., Bank Deposits vs. Saving Accounts).
-   - Created scatter plots with regression lines for pairs like:
-     - Bank Deposits vs. Saving Accounts
-     - Checking Accounts vs. Saving Accounts
-     - Age vs. Superannuation Savings
-     - Estimated Income vs. Checking Accounts
-     - Bank Loans vs. Credit Card Balance
-   - Dashboard views include pie charts for risk distributions, bar charts for deposits/loans by nationality/occupation, and key metrics like Total Clients (2,940), Avg Risk (2.25), Total Deposits ($3.77Bn).
-
-6. **Insights Generation**:
-   - Identified high-risk segments (e.g., 16.39% high-risk clients with $429.31M in high-risk loans).
-   - Noted trends like higher risks in African nationalities (Avg Risk 2.29) and correlations between income and risk.
-
-## Key Insights
-
-- **Risk Distribution**: 40.73% of clients are at Risk Level 1 (low), but high-risk clients (Levels 4-5) drive 68% of total loan exposure.
-- **Demographic Trends**: African nationalities show the highest average risk (2.29). Higher-income clients are 4x more likely to be high-risk.
-- **Exposure Patterns**: Strong positive correlations between Bank Loans and Business Lending. Outliers in credit balances may indicate fraud risks.
-- **Portfolio Concentration**: 16% of clients hold loans from $78K (low-risk) to $310K (high-risk), with a Risk LDR of 1.98.
-- **Recommendations**: Focus on diversifying high-risk segments, enhancing monitoring for outliers, and tailoring products by occupation/nationality.
-
-## How to Run the Project
-
-1. **Clone the Repository**:
+## 🖼️ Dashboard Preview
+https://app.powerbi.com/links/Hy1EBB-O3c?ctid=33e01945-42fa-4a16-9451-0300635b5524&pbi_source=linkShare
