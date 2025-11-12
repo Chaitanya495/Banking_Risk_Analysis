@@ -91,9 +91,9 @@ The data spans years from 1995 to 2005 and includes financial metrics in USD (e.
 
 For detailed visuals, refer to the notebook or screenshots below:
 
-![Summary Dashboard](images/summary-dashboard.png) <!-- Replace with your actual image path -->
-![Deposit Analysis](images/deposit-analysis.png)
-![Loan Deposit Analysis](images/loan-deposit-analysis.png)
+![Summary Dashboard](Banking_Risk_Analysis/Images/Dashboard Screenshots/Summary Page.png)
+![Deposit Analysis](Banking_Risk_Analysis/Images/Dashboard Screenshots/Deposite Anlysis Page.png)
+![Loan Deposit Analysis](Banking_Risk_Analysis/Images/Dashboard Screenshots/Loan Deposit Page.png)
 
 ## How to Run the Project
 
