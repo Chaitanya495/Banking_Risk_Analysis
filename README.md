@@ -1,4 +1,4 @@
-# 📊 Banking Risk Analysis Dashboard (Python / Jupyter Notebook)
+# 📊 Banking Risk Analysis Dashboard
 
 ## 🧠 Overview
 
