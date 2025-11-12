@@ -17,7 +17,7 @@ It provides actionable insights on credit behavior, loan exposures, risk weighti
 ## 🧩 Dataset Information
 The dataset Banking_data.xlsx contains three sheets:
 1. Banking :
-Main client data (3,000 rows) including:
+*Main client data (3,000 rows) including:*
 - **Client ID**
 - **Name**
 - **Age**
@@ -28,7 +28,7 @@ Main client data (3,000 rows) including:
 - **Occupation**
 - **Fee Structure**
 - **Loyalty Classification**
-Financial metrics:
+*Financial metrics:*
 - **Estimated Income**
 - **Superannuation Savings**
 - **Credit Card Balance**
@@ -37,7 +37,7 @@ Financial metrics:
 - **Accounts**
 - **Business Lending**
 - **Properties Owned**
-- **Risk Weighting
+- **Risk Weighting**
 - **BRId (Banking Relationship ID)**
 - **GenderId**
 - **IAId (Investment Advisor ID)**
