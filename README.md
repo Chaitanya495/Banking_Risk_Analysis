@@ -46,9 +46,9 @@ The dataset Banking_data.xlsx contains three sheets:
 - **GenderId**
 - **IAId (Investment Advisor ID)**
 
-2. Gender – Mapping of GenderId to Gender (e.g., 1: Male, 2: Female)
-3. Banking Relationship – Mapping of BRId to Banking Relationship (Retail, Institutional, Private Bank, Commercial)
-4. Investment Advisor – Mapping of IAId to advisor names
+2. Gender : Mapping of GenderId to Gender (e.g., 1: Male, 2: Female)
+3. Banking Relationship : Mapping of BRId to Banking Relationship (Retail, Institutional, Private Bank, Commercial)
+4. Investment Advisor : Mapping of IAId to advisor names
 
 The dataset spans 1995–2005 and financial metrics are in USD (loans in billions, savings in millions).
 
