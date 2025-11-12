@@ -1,6 +1,6 @@
 # Banking Risk Analysis
 
--Banking Dashboard Screenshot : 
+-Banking Dashboard Screenshot : path - Banking_Risk_Analysis/Images/Dashboard Screenshots
 
 ## Project Overview
 
